@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/thai2D.css" />
+    <script src="./js/jquery3.6.0.js"></script>
+    <script src="./js/thai2D.js" defer></script>
+    <title>Thai Lottery Results</title>
+  </head>
+  <body>
+    <span class="historyImgContainer"
+      ><a href="index.html">
+        <img src="./img/backButton.png" alt="" class="backButton"
+      /></a>
+    </span>
+    <span class="tenDayContainer">
+      <img src="./img/tenDate.png" alt="" class="tenDate" />
+    </span>
+
+    <div class="bigcontainer">
+      <div class="liveBox">
+        <div class="container">
+          <div class="box">
+            <div class="live">2D Live</div>
+            <div>
+              <span id="live"></span>
+            </div>
+            <div id="setAndVal">
+              <div class="setBox">
+                <span class="setText">Set</span>
+                <span id="currentSet"></span>
+              </div>
+              <div class="valBox">
+                <span class="valText">Value</span>
+                <span id="currentVal"></span>
+              </div>
+            </div>
+            <div class="time">
+              <span class="finishOrNot"></span>
+              <span class="update"><i>Updated:</i></span>
+              <span id="updateTime"></span>
+            </div>
+            <div id="result-12am">
+              <div id="title1">12:00 AM</div>
+              <div class="box1">
+                <span>
+                  <div id="setText">Set</div>
+                  <div id="set"></div>
+                </span>
+                <span>
+                  <div id="valText">Value</div>
+                  <div id="value"></div>
+                </span>
+                <span>
+                  <div id="twoD_Text">2D</div>
+                  <div id="result-12am-text"></div>
+                </span>
+              </div>
+            </div>
+            <div id="result-430pm">
+              <div id="title1">4:30 PM</div>
+              <div class="box1">
+                <span>
+                  <div id="setText">Set</div>
+                  <div id="set2"></div>
+                </span>
+                <span>
+                  <div id="valText">Value</div>
+                  <div id="value2"></div>
+                </span>
+                <span>
+                  <div id="twoD_Text">2D</div>
+                  <div id="result-430pm-text"></div>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="./section.html"><button class="to_Bet">To Bet</button></a>
+      </div>
+      <div class="scrollable-cart">
+        <div class="cart">
+          <div class="parent">
+            <div class="container1">
+              <div class="cartBox">
+                <div class="dateContainer">
+                  <div id="date"></div>
+                </div>
+                <div id="cart_result-12am">
+                  <div id="cart_title1">12:00 AM</div>
+                  <div class="box1">
+                    <span>
+                      <div id="cart_setText">Set</div>
+                      <div id="cart_set"></div>
+                    </span>
+                    <span>
+                      <div id="cart_valText">Value</div>
+                      <div id="cart_value"></div>
+                    </span>
+                    <span>
+                      <div id="cart_twoD_Text">2D</div>
+                      <div id="tenDay12am"></div>
+                    </span>
+                  </div>
+                </div>
+                <div id="cart_result-430pm">
+                  <div id="cart_title1">4:30 PM</div>
+                  <div class="box1">
+                    <span>
+                      <div id="cart_setText">Set</div>
+                      <div id="cart_set02"></div>
+                    </span>
+                    <span>
+                      <div id="cart_valText">Value</div>
+                      <div id="cart_value02"></div>
+                    </span>
+                    <span>
+                      <div id="cart_twoD_Text">2D</div>
+                      <div id="tenDay430pm"></div>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container1">
+              <div class="cartBox">
+                <div class="dateContainer">
+                  <div id="date1"></div>
+                </div>
+                <div id="cart_result-12am">
+                  <div id="cart_title1">12:00 AM</div>
+                  <div class="box1">
+                    <span>
+                      <div id="cart_setText">Set</div>
+                      <div id="cart_set1"></div>
+                    </span>
+                    <span>
+                      <div id="cart_valText">Value</div>
+                      <div id="cart_value1"></div>
+                    </span>
+                    <span>
+                      <div id="cart_twoD_Text">2D</div>
+                      <div id="tenDay12am1"></div>
+                    </span>
+                  </div>
+                </div>
+                <div id="cart_result-430pm">
+                  <div id="cart_title1">4:30 PM</div>
+                  <div class="box1">
+                    <span>
+                      <div id="cart_setText">Set</div>
+                      <div id="cart_set21"></div>
+                    </span>
+                    <span>
+                      <div id="cart_valText">Value</div>
+                      <div id="cart_value21"></div>
+                    </span>
+                    <span>
+                      <div id="cart_twoD_Text">2D</div>
+                      <div \ id="tenDay430pm1"></div>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="parent">
+            <div class="container1">
+              <div class="cartBox">
+                <div class="dateContainer">
+                  <div id="date2"></div>
+                </div>
+                <div id="cart_result-12am">
+                  <div id="cart_title1">12:00 AM</div>
+                  <div class="box1">
+                    <span>
+                      <div id="cart_setText">Set</div>
+                      <div id="cart_set2"></div>
+                    </span>
+                    <span>
+                      <div id="cart_valText">Value</div>
+                      <div id="cart_value2"></div>
+                    </span>
+                    <span>
+                      <div id="cart_twoD_Text">2D</div>
+                      <div id="tenDay12am2"></div>
+                    </span>
+                  </div>
+                </div>
+                <div id="cart_result-430pm">
+                  <div id="cart_title1">4:30 PM</div>
+                  <div class="box1">
+                    <span>
+                      <div id="cart_setText">Set</div>
+                      <div id="cart_set22"></div>
+                    </span>
+                    <span>
+                      <div id="cart_valText">Value</div>
+                      <div id="cart_value22"></div>
+                    </span>
+                    <span>
+                      <div id="cart_twoD_Text">2D</div>
+                      <div id="tenDay430pm2"></div>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container1">
+              <div class="cartBox">
+                <div class="dateContainer">
+                  <div id="date3"></div>
+                </div>
+                <div id="cart_result-12am">
+                  <div id="cart_title1">12:00 AM</div>
+                  <div class="box1">
+                    <span>
+                      <div id="cart_setText">Set</div>
+                      <div id="cart_set3"></div>
+                    </span>
+                    <span>
+                      <div id="cart_valText">Value</div>
+                      <div id="cart_value3"></div>
+                    </span>
+                    <span>
+                      <div id="cart_twoD_Text">2D</div>
+                      <div id="tenDay12am3"></div>
+                    </span>
+                  </div>
+                </div>
+                <div id="cart_result-430pm">
+                  <div id="cart_title1">4:30 PM</div>
+                  <div class="box1">
+                    <span>
+                      <div id="cart_setText">Set</div>
+                      <div id="cart_set23"></div>
+                    </span>
+                    <span>
+                      <div id="cart_valText">Value</div>
+                      <div id="cart_value23"></div>
+                    </span>
+                    <span>
+                      <div id="cart_twoD_Text">2D</div>
+                      <div id="tenDay430pm3"></div>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="parent">
+            <div class="container1">
+              <div class="cartBox">
+                <div class="dateContainer">
+                  <div id="date4"></div>
+                </div>
+                <div id="cart_result-12am">
+                  <div id="cart_title1">12:00 AM</div>
+                  <div class="box1">
+                    <span>
+                      <div id="cart_setText">Set</div>
+                      <div id="cart_set4"></div>
+                    </span>
+                    <span>
+                      <div id="cart_valText">Value</div>
+                      <div id="cart_value4"></div>
+                    </span>
+                    <span>
+                      <div id="cart_twoD_Text">2D</div>
+                      <div id="tenDay12am4"></div>
+                    </span>
+                  </div>
+                </div>
+                <div id="cart_result-430pm">
+                  <div id="cart_title1">4:30 PM</div>
+                  <div class="box1">
+                    <span>
+                      <div id="cart_setText">Set</div>
+                      <div id="cart_set24"></div>
+                    </span>
+                    <span>
+                      <div id="cart_valText">Value</div>
+                      <div id="cart_value24"></div>
+                    </span>
+                    <span>
+                      <div id="cart_twoD_Text">2D</div>
+                      <div id="tenDay430pm4"></div>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="container1">
+              <div class="cartBox">
+                <div class="dateContainer">
+                  <div id="date5"></div>
+                </div>
+                <div id="cart_result-12am">
+                  <div id="cart_title1">12:00 AM</div>
+                  <div class="box1">
+                    <span>
+                      <div id="cart_setText">Set</div>
+                      <div id="cart_set5"></div>
+                    </span>
+                    <span>
+                      <div id="cart_valText">Value</div>
+                      <div id="cart_value5"></div>
+                    </span>
+                    <span>
+                      <div id="cart_twoD_Text">2D</div>
+                      <div id="tenDay12am5"></div>
+                    </span>
+                  </div>
+                </div>
+                <div id="cart_result-430pm">
+                  <div id="cart_title1">4:30 PM</div>
+                  <div class="box1">
+                    <span>
+                      <div id="cart_setText">Set</div>
+                      <div id="cart_set25"></div>
+                    </span>
+                    <span>
+                      <div id="cart_valText">Value</div>
+                      <div id="cart_value25"></div>
+                    </span>
+                    <span>
+                      <div id="cart_twoD_Text">2D</div>
+                      <div id="tenDay430pm5"></div>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="parent">
+            <div class="container1">
+              <div class="cartBox">
+                <div class="dateContainer">
+                  <div id="date6"></div>
+                </div>
+                <div id="cart_result-12am">
+                  <div id="cart_title1">12:00 AM</div>
+                  <div class="box1">
+                    <span>
+                      <div id="cart_setText">Set</div>
+                      <div id="cart_set6"></div>
+                    </span>
+                    <span>
+                      <div id="cart_valText">Value</div>
+                      <div id="cart_value6"></div>
+                    </span>
+                    <span>
+                      <div id="cart_twoD_Text">2D</div>
+                      <div id="tenDay12am6"></div>
+                    </span>
+                  </div>
+                </div>
+                <div id="cart_result-430pm">
+                  <div id="cart_title1">4:30 PM</div>
+                  <div class="box1">
+                    <span>
+                      <div id="cart_setText">Set</div>
+                      <div id="cart_set26"></div>
+                    </span>
+                    <span>
+                      <div id="cart_valText">Value</div>
+                      <div id="cart_value26"></div>
+                    </span>
+                    <span>
+                      <div id="cart_twoD_Text">2D</div>
+                      <div id="tenDay430pm6"></div>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="container1">
+              <div class="cartBox">
+                <div class="dateContainer">
+                  <div id="date7"></div>
+                </div>
+                <div id="cart_result-12am">
+                  <div id="cart_title1">12:00 AM</div>
+                  <div class="box1">
+                    <span>
+                      <div id="cart_setText">Set</div>
+                      <div id="cart_set7"></div>
+                    </span>
+                    <span>
+                      <div id="cart_valText">Value</div>
+                      <div id="cart_value7"></div>
+                    </span>
+                    <span>
+                      <div id="cart_twoD_Text">2D</div>
+                      <div id="tenDay12am7"></div>
+                    </span>
+                  </div>
+                </div>
+                <div id="cart_result-430pm">
+                  <div id="cart_title1">4:30 PM</div>
+                  <div class="box1">
+                    <span>
+                      <div id="cart_setText">Set</div>
+                      <div id="cart_set27"></div>
+                    </span>
+                    <span>
+                      <div id="cart_valText">Value</div>
+                      <div id="cart_value27"></div>
+                    </span>
+                    <span>
+                      <div id="cart_twoD_Text">2D</div>
+                      <div id="tenDay430pm7"></div>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="parent">
+            <div class="container1">
+              <div class="cartBox">
+                <div class="dateContainer">
+                  <div id="date8"></div>
+                </div>
+                <div id="cart_result-12am">
+                  <div id="cart_title1">12:00 AM</div>
+                  <div class="box1">
+                    <span>
+                      <div id="cart_setText">Set</div>
+                      <div id="cart_set8"></div>
+                    </span>
+                    <span>
+                      <div id="cart_valText">Value</div>
+                      <div id="cart_value8"></div>
+                    </span>
+                    <span>
+                      <div id="cart_twoD_Text">2D</div>
+                      <div id="tenDay12am8"></div>
+                    </span>
+                  </div>
+                </div>
+                <div id="cart_result-430pm">
+                  <div id="cart_title1">4:30 PM</div>
+                  <div class="box1">
+                    <span>
+                      <div id="cart_setText">Set</div>
+                      <div id="cart_set28"></div>
+                    </span>
+                    <span>
+                      <div id="cart_valText">Value</div>
+                      <div id="cart_value28"></div>
+                    </span>
+                    <span>
+                      <div id="cart_twoD_Text">2D</div>
+                      <div id="tenDay430pm8"></div>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="container1">
+              <div class="cartBox">
+                <div class="dateContainer">
+                  <div id="date9"></div>
+                </div>
+                <div id="cart_result-12am">
+                  <div id="cart_title1">12:00 AM</div>
+                  <div class="box1">
+                    <span>
+                      <div id="cart_setText">Set</div>
+                      <div id="cart_set9"></div>
+                    </span>
+                    <span>
+                      <div id="cart_valText">Value</div>
+                      <div id="cart_value9"></div>
+                    </span>
+                    <span>
+                      <div id="cart_twoD_Text">2D</div>
+                      <div id="tenDay12am9"></div>
+                    </span>
+                  </div>
+                </div>
+                <div id="cart_result-430pm">
+                  <div id="cart_title1">4:30 PM</div>
+                  <div class="box1">
+                    <span>
+                      <div id="cart_setText">Set</div>
+                      <div id="cart_set29"></div>
+                    </span>
+                    <span>
+                      <div id="cart_valText">Value</div>
+                      <div id="cart_value29"></div>
+                    </span>
+                    <span>
+                      <div id="cart_twoD_Text">2D</div>
+                      <div id="tenDay430pm9"></div>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,405 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url(../img/bg2d.jpg);
+  background-size: 140%;
+  position: relative;
+}
+
+@media only screen and (max-width: 720px) {
+  body {
+    background-size: 200%;
+  }
+}
+
+.backButton {
+  width: 30px;
+  height: 30px;
+  background-color: darkslategray;
+  margin: 20px;
+  margin-left: 40px;
+  box-shadow: 0 0 5px gray;
+  cursor: pointer;
+}
+
+.tenDate {
+  position: absolute;
+  top: 2%;
+  left: 90%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.tenDate:hover,
+.backButton:hover {
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.container1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5px;
+  margin: 10px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.box {
+  text-align: center;
+  padding: 20px;
+  width: 220px;
+}
+
+.cartBox {
+  text-align: center;
+  padding: 20px;
+  width: 170px;
+}
+
+.live {
+  width: 30px;
+  font-size: 8px;
+  color: white;
+  font-weight: bolder;
+  text-shadow: 1px 1px 5px red;
+  border: 1px solid red;
+  background-color: red;
+}
+
+.live,
+.time,
+#result-12am,
+#cart_result-430pm,
+#setAndVal {
+  margin: 10px 0;
+}
+
+.live,
+.time,
+#cart_result-12am,
+#result-430pm,
+#setAndVal {
+  margin: 10px 0;
+}
+
+#result-12am,
+#result-430pm {
+  width: 200px;
+  height: 110px;
+  background-color: darkslategray;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#cart_result-12am,
+#cart_result-430pm {
+  width: 150px;
+  height: 110px;
+  background-color: darkslategrey;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+#set,
+#value,
+#set2,
+#value2 {
+  font-weight: bold;
+  font-size: 13px;
+}
+
+#cart_set,
+#cart_set1,
+#cart_set02,
+#cart_set3,
+#cart_set4,
+#cart_set5,
+#cart_set6,
+#cart_set7,
+#cart_set8,
+#cart_set9,
+#cart_value,
+#cart_value1,
+#cart_value02,
+#cart_value3,
+#cart_value4,
+#cart_value5,
+#cart_value6,
+#cart_value7,
+#cart_value8,
+#cart_value9,
+#cart_set2,
+#cart_set21,
+#cart_set22,
+#cart_set23,
+#cart_set24,
+#cart_set25,
+#cart_set26,
+#cart_set27,
+#cart_set28,
+#cart_set29,
+#cart_value2,
+#cart_value21,
+#cart_value22,
+#cart_value23,
+#cart_value24,
+#cart_value25,
+#cart_value26,
+#cart_value27,
+#cart_value28,
+#cart_value29 {
+  font-weight: bold;
+  font-size: 11px;
+}
+
+#result-12am-text,
+#result-430pm-text {
+  font-weight: bolder;
+  color: goldenrod;
+}
+
+#tenDay12am,
+#tenDay12am1,
+#tenDay12am2,
+#tenDay12am3,
+#tenDay12am4,
+#tenDay12am5,
+#tenDay12am6,
+#tenDay12am7,
+#tenDay12am8,
+#tenDay12am9,
+#tenDay430pm,
+#tenDay430pm1,
+#tenDay430pm2,
+#tenDay430pm3,
+#tenDay430pm4,
+#tenDay430pm5,
+#tenDay430pm6,
+#tenDay430pm7,
+#tenDay430pm8,
+#tenDay430pm9 {
+  font-weight: bolder;
+  color: goldenrod;
+  font-size: 13px;
+}
+
+.box1 {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 15px;
+  box-shadow: 5px 5px 10px black;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+#title1 {
+  width: 180px;
+  border-bottom: 1px solid white;
+  text-align: center;
+  padding: 10px;
+}
+
+#cart_title1 {
+  width: 127px;
+  border-bottom: 1px solid white;
+  text-align: center;
+  padding: 10px;
+  font-size: 13px;
+}
+
+#setAndVal {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.setBox,
+.valBox {
+  width: 70px;
+  height: 10px;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  overflow: hidden;
+  border-radius: 3px;
+  position: relative;
+}
+
+#live {
+  font-size: 45px;
+  font-weight: bolder;
+  color: darkred;
+  text-shadow: 2px 2px 5px black;
+}
+
+#setText,
+#valText,
+#twoD_Text {
+  font-size: 10px;
+  color: white;
+  padding-bottom: 5px;
+}
+
+#cart_setText,
+#cart_setText1,
+#cart_setText2,
+#cart_setText3,
+#cart_setText4,
+#cart_setText5,
+#cart_setText6,
+#cart_setText7,
+#cart_setText8,
+#cart_setText9,
+#cart_valText,
+#cart_valText1,
+#cart_valText2,
+#cart_valText3,
+#cart_valText4,
+#cart_valText5,
+#cart_valText6,
+#cart_valText7,
+#cart_valText8,
+#cart_valText9,
+#cart_twoD_Text,
+#cart_twoD_Text1,
+#cart_twoD_Text2,
+#cart_twoD_Text3,
+#cart_twoD_Text4,
+#cart_twoD_Text5,
+#cart_twoD_Text6,
+#cart_twoD_Text7,
+#cart_twoD_Text8,
+#cart_twoD_Text9 {
+  font-size: 8.5px;
+  color: white;
+  padding-bottom: 5px;
+}
+
+.setText,
+.valText {
+  position: absolute;
+  top: 28%;
+  left: 5%;
+  font-size: 7px;
+}
+
+#currentSet,
+#currentVal {
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.update,
+#updateTime {
+  font-size: 9px;
+  color: black;
+}
+
+.bigcontainer {
+  overflow-x: hidden;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.liveBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-right: 120px;
+  margin-top: 30px;
+  margin-left: 12%;
+  display: block;
+}
+
+.scrollable-cart {
+  overflow-y: auto;
+  max-height: 90vh;
+  max-width: auto;
+  background-color: inherit;
+  scrollbar-width: thin;
+  scrollbar-color: inherit inherit;
+  &::-webkit-scrollbar {
+    width: 0px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: inherit;
+    border-radius: 6px;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: inherit;
+  }
+}
+.cart {
+  border-left: 1px solid thin;
+  border-right: 1px solid thin;
+  opacity: 1;
+  visibility: visible;
+  padding-left: 10px;
+}
+/* Add a class to hide the cart when needed */
+.cart.hide {
+  opacity: 0;
+  visibility: hidden;
+  display: none;
+  /* Hide the cart completely */
+}
+.parent {
+  display: flex;
+}
+#date,
+#date1,
+#date2,
+#date3,
+#date4,
+#date5,
+#date6,
+#date7,
+#date8,
+#date9 {
+  width: 120px;
+  font-size: 17px;
+  font-weight: bolder;
+  text-shadow: 1px 1px 10px grey;
+  color: darkred;
+  border: 1px solid black;
+}
+.dateContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.to_Bet {
+  border-radius: 5px;
+  width: 100px;
+  height: 40px;
+  padding: 10px;
+  background: linear-gradient(to right, #ffcc00, red);
+  border-bottom: none;
+  text-decoration: none;
+  box-shadow: 5px 5px 5px black;
+  margin-top: 30px;
+  margin-left: 35%;
+  font-weight: bolder;
+}
+.to_Bet:hover {
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+}

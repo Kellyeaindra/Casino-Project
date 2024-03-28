@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/dice.css" />
+    <script src="js/dice.js" defer></script>
+    <title>3D Dice Rolling Game</title>
+  </head>
+
+  <body>
+    <span class="historyImgContainer"
+      ><a href="index.html"
+        ><img src="./img/backButton.png" alt="" class="backButton"
+      /></a>
+    </span>
+    <div class="container">
+      <div class="cube1">
+        <div class="face front"></div>
+        <div class="face back"></div>
+        <div class="face top"></div>
+        <div class="face bottom"></div>
+        <div class="face right"></div>
+        <div class="face left"></div>
+      </div>
+      <div class="cube2">
+        <div class="face front"></div>
+        <div class="face back"></div>
+        <div class="face top"></div>
+        <div class="face bottom"></div>
+        <div class="face right"></div>
+        <div class="face left"></div>
+      </div>
+    </div>
+
+    <div class="player">
+      <div class="row1">
+        <span class="betNum">Bet Number</span>
+        <br />
+        <button id="2" class="number" value="2" onclick="clickNum(this)">
+          2
+        </button>
+        <button id="3" class="number" value="3" onclick="clickNum(this)">
+          3
+        </button>
+        <button id="4" class="number" value="4" onclick="clickNum(this)">
+          4
+        </button>
+        <button id="5" class="number" value="5" onclick="clickNum(this)">
+          5</button
+        ><br />
+        <button id="6" class="number" value="6" onclick="clickNum(this)">
+          6
+        </button>
+        <button id="7" class="number" value="7" onclick="clickNum(this)">
+          7
+        </button>
+        <button id="8" class="number" value="8" onclick="clickNum(this)">
+          8
+        </button>
+        <button id="9" class="number" value="9" onclick="clickNum(this)">
+          9</button
+        ><br />
+        <button id="10" class="number" value="10" onclick="clickNum(this)">
+          10
+        </button>
+        <button id="11" class="number" value="11" onclick="clickNum(this)">
+          11
+        </button>
+        <button id="12" class="number" value="12" onclick="clickNum(this)">
+          12
+        </button>
+        <button class="number" id="roll" onclick="rollBtn()">Bet</button>
+      </div>
+      <div class="row2">
+        <span class="betCash">Bet Cash </span>
+        <br />
+        <button class="cash" id="1000" onclick="clickCash(this)">1k</button>
+        <button class="cash" id="2000" onclick="clickCash(this)">2k</button>
+        <button class="cash" id="3000" onclick="clickCash(this)">3k</button>
+        <button class="cash" id="4000" onclick="clickCash(this)">4k</button
+        ><br />
+        <button class="cash" id="5000" onclick="clickCash(this)">5k</button>
+        <button class="cash" id="6000" onclick="clickCash(this)">6k</button>
+        <button class="cash" id="7000" onclick="clickCash(this)">7k</button>
+        <button class="cash" id="8000" onclick="clickCash(this)">8k</button
+        ><br />
+        <button class="cash" id="9000" onclick="clickCash(this)">9k</button>
+        <button class="cash" id="10000" onclick="clickCash(this)">10k</button>
+        <button class="cash" id="50000" onclick="clickCash(this)">50k</button>
+        <button class="cash" id="100000" onclick="clickCash(this)">100k</button>
+      </div>
+    </div>
+    <div id="result"></div>
+    <div id="selectedValue"></div>
+    <div id="totalCash"></div>
+    <audio src="img/RollDice.mp3" id="dice"></audio>
+    <img src="img/casinopng.png" id="pic" />
+    <audio src="img/click.wav" id="clickCash"></audio>
+    <audio src="img/ping.mp3" id="clickNum"></audio>
+  </body>
+</html>

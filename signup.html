@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/import.css">
+    <link rel="stylesheet" href="css/login.css" />
+    <title>Sign Up</title>
+    <script src="./js/jquery3.6.0.js"></script>
+    <script src="./js/signup.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <!--logo and caption-->
+        <a href="#"><img src="img/casino.jpg" alt="casino" height="50px"></a>
+        <span class="title"><a href="#">Casino Game</a></span>
+        </a>
+        <!--Menu-->
+        <ul class="desktop">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+        <!--cart menu-->
+        <a href="#">
+            <label for="switch">
+                <ion-icon name="menu"></ion-icon>
+            </label>
+        </a>
+    </header>
+    <input type="checkbox" id="switch" />
+    <ul class="mobile">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="login.html">Login</a></li>
+    </ul>
+    <!--box-->
+    <div class="container">
+        <form id="form">
+            <h1>Registration Form</h1>
+            <!--Form design-->
+            <div class="info">
+                <input type="text" id="email" placeholder="Enter your email:" /><br>
+            </div>
+            <div class="info">
+                <input type="text" id="username" placeholder="Enter your username : " />
+            </div>
+            <div class="info">
+                <input type="password" id="password1" placeholder="Enter your password:" />
+            </div>
+            <div class="info">
+                <input type="password" id="password2" placeholder="Enter your password again :" />
+            </div>
+            <div class="info">
+                <input type="number" id="amount" placeholder="Enter your initial amount :" />
+            </div>
+            <button class="save" type="submit" id="register">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>

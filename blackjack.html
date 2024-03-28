@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLACKJACK</title>
+    <link rel="stylesheet" href="./css/blackjack.css">
+    <script src="./js/blackjack.js" defer></script>
+</head>
+
+<body>
+    <span class="historyImgContainer">
+        <a href="index.html"> <img src="./img/backButton.png" alt="" class="backButton" /></a>
+    </span>
+    <header>Blackjack Game</header>
+    <div id="game">
+        <p class="p1">PLayer's Hand:</p>
+        <div id="player-hand"></div>
+        <p class="p1">Dealer's Hand:</p>
+        <div id="dealer-hand"></div>
+        <div id="result"></div>
+        <p class="balance">Balance: <span id="balance"></span></p>
+        <button class="btn1" onclick="startGame()">Start Game</button>
+        <button class="btn2" onclick="hit()">Hit</button>
+        <button class="btn3" onclick="stand()">Stand</button>
+        <br>
+        <br>
+        <label for="betAmount">Bet Amount:</label>
+        <input type="number" id="betAmount" value="100">
+    </div>
+</body>
+
+</html>

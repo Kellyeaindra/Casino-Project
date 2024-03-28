@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Spin Game</title>
+    <link rel="stylesheet" href="./css/spin.css" />
+    <script src="./js/spin.js" defer></script>
+  </head>
+  <body>
+    <span class="historyImgContainer">
+      <a href="index.html">
+        <img src="./img/backButton.png" alt="" class="backButton"
+      /></a>
+    </span>
+    <h1>Spin Wheel</h1>
+    <button id="spin" onclick="btnSpin()">Spin</button>
+    <div class="arrow"></div>
+    <div class="text" id="win"></div>
+    <div class="main">
+      <div class="container">
+        <div class="ten">0</div>
+        <div class="twenty">10ks</div>
+        <div class="fifty">20ks</div>
+        <div class="hundred">50ks</div>
+        <div class="twohundred">100ks</div>
+        <div class="fivehundred">200ks</div>
+        <div class="thousand">500ks</div>
+        <div class="fivethousand">1000ks</div>
+      </div>
+      <div class="user">
+        <label class="press">Bet Here!</label>
+        <button class="belt" id="100" onclick="Clickbelt(this)">100ks</button>
+      </div>
+    </div>
+    <div class="total" id="totalamount">300</div>
+    <audio
+      src="./sounds/wheel-spin-click-slow-down-101152.mp3"
+      id="wheel"
+    ></audio>
+    <audio src="./sounds/ping-82822.mp3" id="ping"></audio>
+    <audio src="./sounds/success-1-6297.mp3" id="success"></audio>
+  </body>
+</html>

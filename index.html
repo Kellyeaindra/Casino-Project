@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/import.css">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/about.css">
+  <title>Casino Game</title>
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wholeContainer">
+    <header>
+      <!--logo and caption-->
+      <a href="#"><img src="img/casino.jpg" alt="casino" height="50px"></a>
+      <span class="title"><a href="#">Casino Game</a></span>
+      </a>
+      <!--Menu-->
+      <ul class="desktop">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li>Name : <span id="username"></span></li>
+        <li>Amount : <span id="amount"></span> Ks</li>
+        <li><a href="addAmount.html"><img src="./img/plus3.jpg" alt="plus" width="20px"></a></li>
+
+      </ul>
+      <!--cart menu-->
+      <a href="#">
+        <label for="switch">
+          <ion-icon name="menu"></ion-icon>
+        </label>
+      </a>
+    </header>
+    <input type="checkbox" id="switch" />
+    <ul class="mobile">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="signup.html">Sign Up</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+    <!--End header-->
+    <marquee direction="left" class="animationtext">Welcome From Our Website! You can play slot game, dice
+      game,blackjack game,spin game and 2D
+      Live game.<span class="animationtext1"> Gambling is a kind of drug! Please control your mind!</span>
+
+    </marquee>
+
+    <div class="bannercontainer">
+      <figure class="banner">
+        <img src="./img/background.jpg" width="100%" alt="banner">
+        <figcaption>
+          Let's Play Casino Game!<br>
+          <span class="text1"> "Gambling is a kind of drug,please control your mind!"</span>
+        </figcaption>
+      </figure>
+    </div>
+    <div class="imageanimation">
+      <div class="slider"></div>
+    </div>
+    <!--For game-->
+    <div class="games">
+      <div class="slot">
+        <div class="name">Slot Game</div>
+        <img src="img/slotlogo1.jpg" alt="slot" width="230px" />
+        <p class="sDes">
+          <button class="playbtn"><a href="slotRule.html">Play Game</a></button>
+        </p>
+      </div>
+      <div class="dice">
+        <div class="name">Dice Game</div>
+        <img src="img/dicelogo.jpg" alt="dice" class="diceimg" height="220px" />
+        <p class="sDes">
+          <button class="playbtn"><a href="diceRule.html">Play Game</a></button>
+        </p>
+      </div>
+      <div class="blackjack">
+        <div class="name">Black Jack Game</div>
+        <img src="img/blackLogo.jpg" alt="blackjack" class="blackimg" height="220px" />
+        <p class="sDes">
+          <button class="playbtn"><a href="blackjackRule.html">Play Game</a></button>
+        </p>
+      </div>
+
+      <div class="spin">
+        <div class="name">Spin Game</div>
+        <img src="img/spin.jpg" alt="blackjack" class="blackimg" height="220px" />
+        <p class="sDes">
+          <button class="playbtn"><a href="spinRule.html">Play Game</a></button>
+        </p>
+      </div>
+      <div class="thai2d">
+        <div class="name"> 2D Lottery</div>
+        <img src="img/2dLogo.jfif" alt="2D" class="2dimg" height="220px" />
+        <p class="sDes">
+          <button class="playbtn"><a href="thai2dRule.html">Bet</a></button>
+        </p>
+      </div>
+    </div>
+    <!--poster-->
+    <div class="bannercontainer1">
+      <figure class="banner">
+        <img src="./img/gameBackground.jpg" width="100%" alt="banner">
+
+      </figure>
+    </div>
+
+    <!--foooter-->
+    <footer>
+      <div class="menu">
+        <ul class="bottomli">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="signup.html">Sign Up</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </div>
+      <div class="text">
+        <div class="caption">Casino Game</div>
+        <p>
+          Casino game is world's independent online gaming website,providing trused reviews and information.
+        </p>
+      </div>
+      <div class="icon">
+        <p>Contact</p>
+        <img src="./img/Facebook.png" alt="Facebook" />
+        <img src="./img/instgram.png" alt="instagram" />
+        <img src="./img/telegram.png" alt="telegram" />
+        <img src="./img/twitter.png" alt="twitter">
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    console.log("hello");
+    var userinfo = JSON.parse(localStorage.getItem('userinfo'));
+    var index = localStorage.getItem('userIndex');
+    var username = document.getElementById('username');
+    var amount = document.getElementById('amount');
+    username.innerText = userinfo[index]['username'];
+    amount.innerText = userinfo[index]['amount'];
+  </script>
+
+</body>
+
+</html>

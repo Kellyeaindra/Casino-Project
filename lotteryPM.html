@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/lottery.css" />
+  <script src="./js/jquery3.6.0.js"></script>
+  <script src="./js/lottery.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+  <title>Thai Lottery</title>
+</head>
+
+<body>
+  <img src="./backButton.png" alt="" class="backButton" />
+  <div class="mainVal">Total:</div>
+  <input id="yourMoney" type="text" disabled>
+  <div class="boxContainer">
+    <div class="bigContainer">
+      <div class="firstBoxContainer">
+        <div>
+          <div class="limitTimeText">
+            <span>Close Time</span>
+            <span>3:50:00 PM</span>
+          </div>
+          <div class="firstLine">
+            <button class="firstBoxBtn" id="power">P</button>
+            <button class="firstBoxBtn" id="netKhat">N</button>
+            <button class="firstBoxBtn" id="silbing">Bro</button>
+            <button class="firstBoxBtn" id="twin">Twin</button>
+          </div>
+
+
+          <button class="r">R</button>
+
+
+        </div>
+      </div>
+      <div class="container">
+        <div class="key">
+          <div class="keyboard">
+            <div class="row">
+              <button class="buttons">00</button>
+              <button class="buttons">01</button>
+              <button class="buttons">02</button>
+              <button class="buttons">03</button>
+              <button class="buttons">04</button>
+              <button class="buttons">05</button>
+            </div>
+            <div class="row">
+              <button class="buttons">06</button>
+              <button class="buttons">07</button>
+              <button class="buttons">08</button>
+              <button class="buttons">09</button>
+              <button class="buttons">10</button>
+              <button class="buttons">11</button>
+            </div>
+            <div class="row">
+              <button class="buttons">12</button>
+              <button class="buttons">13</button>
+              <button class="buttons">14</button>
+              <button class="buttons">15</button>
+              <button class="buttons">16</button>
+              <button class="buttons">17</button>
+            </div>
+            <div class="row">
+              <button class="buttons">18</button>
+              <button class="buttons">19</button>
+              <button class="buttons">20</button>
+              <button class="buttons">21</button>
+              <button class="buttons">22</button>
+              <button class="buttons">23</button>
+            </div>
+            <div class="row">
+              <button class="buttons">24</button>
+              <button class="buttons">25</button>
+              <button class="buttons">26</button>
+              <button class="buttons">27</button>
+              <button class="buttons">28</button>
+              <button class="buttons">29</button>
+            </div>
+            <div class="row">
+              <button class="buttons">30</button>
+              <button class="buttons">31</button>
+              <button class="buttons">32</button>
+              <button class="buttons">33</button>
+              <button class="buttons">34</button>
+              <button class="buttons">35</button>
+            </div>
+            <div class="row">
+              <button class="buttons">36</button>
+              <button class="buttons">37</button>
+              <button class="buttons">38</button>
+              <button class="buttons">39</button>
+              <button class="buttons">40</button>
+              <button class="buttons">41</button>
+            </div>
+            <div class="row">
+              <button class="buttons">42</button>
+              <button class="buttons">43</button>
+              <button class="buttons">44</button>
+              <button class="buttons">45</button>
+              <button class="buttons">46</button>
+              <button class="buttons">47</button>
+            </div>
+            <div class="row">
+              <button class="buttons">48</button>
+              <button class="buttons">49</button>
+              <button class="buttons">50</button>
+              <button class="buttons">51</button>
+              <button class="buttons">52</button>
+              <button class="buttons">53</button>
+            </div>
+            <div class="row">
+              <button class="buttons">54</button>
+              <button class="buttons">55</button>
+              <button class="buttons">56</button>
+              <button class="buttons">57</button>
+              <button class="buttons">58</button>
+              <button class="buttons">59</button>
+            </div>
+            <div class="row">
+              <button class="buttons">60</button>
+              <button class="buttons">61</button>
+              <button class="buttons">62</button>
+              <button class="buttons">63</button>
+              <button class="buttons">64</button>
+              <button class="buttons">65</button>
+            </div>
+            <div class="row">
+              <button class="buttons">66</button>
+              <button class="buttons">67</button>
+              <button class="buttons">68</button>
+              <button class="buttons">69</button>
+              <button class="buttons">60</button>
+              <button class="buttons">61</button>
+            </div>
+            <div class="row">
+              <button class="buttons">62</button>
+              <button class="buttons">63</button>
+              <button class="buttons">64</button>
+              <button class="buttons">65</button>
+              <button class="buttons">66</button>
+              <button class="buttons">67</button>
+            </div>
+            <div class="row">
+              <button class="buttons">68</button>
+              <button class="buttons">69</button>
+              <button class="buttons">70</button>
+              <button class="buttons">71</button>
+              <button class="buttons">72</button>
+              <button class="buttons">73</button>
+            </div>
+            <div class="row">
+              <button class="buttons">74</button>
+              <button class="buttons">75</button>
+              <button class="buttons">76</button>
+              <button class="buttons">77</button>
+              <button class="buttons">78</button>
+              <button class="buttons">79</button>
+            </div>
+            <div class="row">
+              <button class="buttons">80</button>
+              <button class="buttons">81</button>
+              <button class="buttons">82</button>
+              <button class="buttons">83</button>
+              <button class="buttons">84</button>
+              <button class="buttons">85</button>
+            </div>
+            <div class="row">
+              <button class="buttons">86</button>
+              <button class="buttons">87</button>
+              <button class="buttons">88</button>
+              <button class="buttons">89</button>
+              <button class="buttons">90</button>
+              <button class="buttons">91</button>
+            </div>
+            <div class="row">
+              <button class="buttons">92</button>
+              <button class="buttons">93</button>
+              <button class="buttons">94</button>
+              <button class="buttons">95</button>
+              <button class="buttons">96</button>
+              <button class="buttons">97</button>
+            </div>
+            <div class="row">
+              <button class="buttons">98</button>
+              <button class="buttons">99</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scrollable-cart">
+
+      <div class="cart">
+        <p class="invoice">INVOICE</p]>
+        <div class="cartTitle">
+          <span>Number</span>
+          <span>Multiplied by</span>
+          <span>Amount</span>
+          <span>Delete</span>
+        </div>
+        <div class="customChoice">
+        </div>
+        <div class="totalAmt">
+          <span>Total Amount</span>
+          <span>
+
+            <span id="grand"></span>
+          </span>
+        </div>
+
+        <div class="bottomBtn">
+          <div class="done"> Done.Thank You</div>
+
+          <button class="confirm">Confirm</button>
+          <button class="download">Download</button>
+        </div>
+
+      </div>
+      <button class="exit">Exit</button>
+    </div>
+
+  </div>
+
+</body>
+
+</html>

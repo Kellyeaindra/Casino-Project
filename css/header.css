@@ -1,0 +1,64 @@
+:root {
+  --primaryBgColor: #212529;
+  --primaryColor: #ffc107;
+}
+/*For header style*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  max-width: 100%;
+}
+body {
+  background-repeat: no-repeat;
+  background-color: rgb(2, 12, 37);
+}
+header {
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: var(--primaryBgColor);
+  color: var(--primaryColor);
+  box-shadow: 3px 3px 8px gray;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.title {
+  font-size: 25px;
+}
+/* For link inside the a tag*/
+a {
+  color: var(--primaryColor);
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+}
+li {
+  font-family: "Montserrat", sans-serif;
+}
+ul {
+  display: flex;
+}
+
+ul > li {
+  margin: 15px;
+  list-style-type: none;
+  font-size: 18px;
+  position: relative;
+}
+
+a ion-icon[name="menu"] {
+  display: none;
+}
+/*For mobile view*/
+.mobile {
+  display: none;
+  flex-direction: column;
+  background-color: var(--primaryBgColor);
+  color: var(--primaryColor);
+  box-shadow: 3px 3px 10px gray;
+}
+
+#switch {
+  display: none;
+}

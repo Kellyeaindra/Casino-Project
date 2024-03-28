@@ -1,0 +1,78 @@
+/*For form container design*/
+* {
+  max-width: 100%;
+}
+.container {
+  width: 350px;
+  height: 400px;
+  background-color: #e7c767;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-left: 38%;
+  margin-top: 40px;
+  transition: all 1s;
+}
+.container:hover {
+  box-shadow: 0 0 7px #ffc107;
+}
+/*For Login&SignUp form style*/
+h1 {
+  font-size: 22px;
+  font-style: italic;
+}
+form {
+  width: 300px;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+.info {
+  font-size: 17px;
+  margin: 15px;
+}
+
+input {
+  padding: 10px;
+  width: 270px;
+  border: 0px solid white;
+  border-radius: 10px;
+}
+/*For submit button*/
+.save {
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 18px;
+  background-color: rgb(2, 12, 37);
+  color: #ffc107;
+}
+/* For error message*/
+.error {
+  font-size: 14px;
+  color: red;
+  justify-content: end;
+  margin: 3px;
+}
+/*For mobile view*/
+@media screen and (max-width: 720px) {
+  header {
+    padding-top: 10;
+    padding-bottom: 10px;
+  }
+
+  .container {
+    margin-left: 10%;
+  }
+  a ion-icon[name="menu"] {
+    display: block;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  #switch:checked + ul {
+    display: flex;
+  }
+}

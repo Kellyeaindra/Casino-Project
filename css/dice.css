@@ -1,0 +1,269 @@
+/* Results all the efault styling provided by the browser */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+/* Styles for the body of the web page */
+body {
+  height: 100vh;
+  background-image: url(../img/diceBg.jpg);
+  background-color: transparent;
+  background-size: cover;
+  padding-top: 60px;
+}
+.historyImgContainer {
+  position: absolute;
+  top: 1%;
+  margin-right: 10px;
+}
+/* Styles for the container that hold dices */
+.container {
+  display: flex;
+  justify-content: center;
+}
+.backButton {
+  width: 30px;
+  height: 30px;
+  background-color: darkslategray;
+  margin-top: 10px;
+  margin-left: 40px;
+  box-shadow: 0 0 5px gray;
+  cursor: pointer;
+}
+
+/* Styles for the individual the dice */
+.cube1,
+.cube2 {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  transform-style: preserve-3d; /*Allow 3D transformations*/
+  transition: 1s ease;
+  margin: 25px;
+  transform: rotateX(45deg) rotateY(45deg) scale(0.9); /*Rotates and scales of the dices */
+}
+
+/* Keyframes for the dice rolling animations */
+@keyframes rolling1 {
+  50% {
+    transform: rotateX(720deg) rotateY(720deg);
+  }
+}
+@keyframes rolling2 {
+  50% {
+    transform: rotateX(-720deg) rotateY(-720deg);
+  }
+}
+
+/* Styles for gaces of dices */
+.face {
+  position: absolute; /*Positions the faces absolutely within the dice*/
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  border: 5px solid #f1e8e8;
+  transform-style: preserve-3d;
+  background: linear-gradient(145deg, #eae4dc, #fff);
+}
+
+/* Styles for the before pseudo-element of the faces */
+.face::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background: #f6f3f0;
+  transform: translateZ(
+    -1px
+  ); /*Moves the pseudo-element slightly towards the viever*/
+}
+
+/* Styles for the after pseudo-element of the faces */
+.face::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #131210;
+}
+
+/* Styles for the front face of the dice */
+.front {
+  transform: translateZ(50px); /*Moves the face towards the viewer*/
+}
+
+/* Styles for the back face of the dice */
+.back {
+  transform: rotateX(180deg) translateZ(50px); /*Rotates and moves the face*/
+}
+
+/* Styles for the top face of the dice */
+.top {
+  transform: rotateX(90deg) translateZ(50px); /*Rotates and moves the face*/
+}
+
+/* Styles for the bottom face of the dice */
+.bottom {
+  transform: rotateX(-90deg) translateZ(50px); /*Rotates and moves the face*/
+}
+
+/* Styles for the right face of the dice */
+.right {
+  transform: rotateY(90deg) translateZ(50px); /*Rotates and moves the face*/
+}
+
+/* Styles for the left  face of the dice */
+.left {
+  transform: rotateY(-90deg) translateZ(50px); /*Rotates and moves the face*/
+}
+
+/* Styles for the after pseudo-element of the front faces */
+.front::after {
+  width: 30px;
+  height: 30px;
+  background: #000000;
+  margin: -17px 0 0 -17px; /*Positions the pseudo-element in the middle of the dice*/
+}
+
+/* Styles for the after pseudo-element of the back faces */
+.back::after {
+  margin: -37px 0 0 -32px; /*Positions the pseudo-element*/
+  box-shadow: 44px 0, 0 27px, 44px 27px, 0 53px, 44px 53px; /*Adds shadow to create the dots on the dice */
+}
+
+/* Styles for the after pseudo-element of the top faces */
+.top::after {
+  margin: -32px 0 0 -32px; /*Positions the pseudo-element*/
+  box-shadow: 43px 43px; /*Adds a shadow to create the dots on the dice */
+}
+
+/* Styles for the after pseudo-element of the bottom faces */
+.bottom::after {
+  margin: -37px 0 0 -37px; /*Positions the pseudo-element*/
+  box-shadow: 27px 27px, 53px 53px, 53px 0, 0 53px; /*Adds shadow to create the dots on the dice */
+}
+
+/* Styles for the after pseudo-element of the right faces */
+.right::after {
+  margin: -31px 0 0 -31px; /*Positions the pseudo-element*/
+  box-shadow: 40px 0, 0 40px, 40px 40px; /*Adds shadow to create the dots on the dice */
+}
+
+/* Styles for the after pseudo-element of the left faces */
+.left::after {
+  margin: -38px 0 0 -38px; /*Positions the pseudo-element*/
+  box-shadow: 30px 30px, 55px 55px; /*Adds shadow to create the dots on the dice */
+}
+
+/*Styles for player container*/
+.player {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 850px;
+  height: 300px;
+  border-radius: 250px;
+  margin-top: 10%;
+  margin-left: 22%;
+  padding: 50px;
+}
+
+/*Styles for the number element*/
+.number {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  margin: 10px;
+  background-color: rgb(82, 78, 180);
+  font-size: 25px;
+  font-weight: bolder;
+  border: 2px solid rgb(175, 148, 148);
+  color: #ede5e5;
+  box-shadow: 0px 0px 5px #906da3;
+}
+
+/* Styles for the result element */
+#result {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 35px;
+  text-align: center;
+  color: antiquewhite;
+}
+
+/* Styles for the selectedValue element */
+#selectedValue {
+  position: absolute;
+  top: 3%;
+  right: 5%;
+  background-color: transparent;
+  font-size: 30px;
+  color: #fff;
+}
+
+/* Styles for the cash buttons */
+.cash {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: goldenrod;
+  border: 2px solid rgb(177, 72, 72);
+  margin: 8px;
+  font-size: 18px;
+  box-shadow: 0px 0px 5px #a36d6d;
+}
+
+/* Styles for the total cash text */
+#totalCash {
+  position: absolute;
+  top: 3%;
+  left: 7%;
+  background-color: transparent;
+  font-size: 30px;
+  color: rgba(255, 246, 246, 0.916);
+}
+
+/* Styles and positions of the image  */
+#pic {
+  width: 350px;
+  height: 300px;
+  position: absolute;
+  left: 75%;
+  top: 20%;
+}
+
+/* Styles for bet number text */
+.betNum {
+  margin: 5px;
+  font-size: 25px;
+  color: #ccc;
+  transition: 2s;
+}
+
+.betNum:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+/* Styles for bet cash text */
+.betCash {
+  margin: 5px;
+  font-size: 25px;
+  color: rgb(128, 128, 0);
+  transition: 2s;
+}
+
+.betCash:hover {
+  color: yellow;
+  text-decoration: underline;
+}

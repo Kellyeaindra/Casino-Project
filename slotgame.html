@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/slot.css" />
+    <script src="js/jquery3.6.0.js"></script>
+    <script src="js/slot.js" defer></script>
+    <title>Slot Game</title>
+  </head>
+  <body>
+    <input type="number" id="yourMoney" class="yourMoney" disabled />
+    <span id="moneyUnit"></span>
+    <span class="historyImgContainer">
+      <a href="index.html">
+        <img src="./img/backButton.png" alt="" class="backButton"
+      /></a>
+    </span>
+    <select class="bet" id="bet">
+      <option class="option" value="0">Choose Bet</option>
+      <option class="option" value="1000">1k</option>
+      <option class="option" value="2000">2k</option>
+      <option class="option" value="3000">3k</option>
+      <option class="option" value="4000">4k</option>
+      <option class="option" value="5000">5k</option>
+      <option class="option" value="6000">6k</option>
+      <option class="option" value="7000">7k</option>
+      <option class="option" value="8000">8k</option>
+      <option class="option" value="9000">9k</option>
+      <option class="option" value="10000">10k</option>
+      <option class="option" value="50000">50k</option>
+      <option class="option" value="100000">100k</option>
+    </select>
+    <div class="container">
+      <div id="slot-machine">
+        <div class="slotContainer">
+          <div class="box" id="box1"></div>
+          <div class="box" id="box2"></div>
+          <div class="box" id="box3"></div>
+        </div>
+        <audio id="slotSound">
+          <source src="sounds/mic.wav" type="audio/mp3" />
+        </audio>
+        <div class="welcome">Welcome to Slot Game</div>
+        <button id="spinBtn"></button>
+        <div class="outPut" id="outPut"></div>
+        <audio id="winSond">
+          <source src="sounds/yes.wav" type="audio/mp3" />
+        </audio>
+        <audio id="loseSound">
+          <source src="sounds/no.mp3" type="audio/mp3" />
+        </audio>
+      </div>
+    </div>
+  </body>
+</html>
